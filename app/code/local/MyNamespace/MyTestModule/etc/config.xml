@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MyNamespace_MyTestModule>
+            <version>0.0.0.0.1</version>
+        </MyNamespace_MyTestModule>
+    </modules>
+    <frontend>
+    	<routers>
+    		<frontendrouter>
+    		<use>standard</use>
+    		<args>
+    			<module>MyNamespace_MyTestModule</module>
+    			<frontname>test</frontname>
+    		</args>
+    		</frontendrouter>
+    	</routers>
+    </frontend>
+    <global>
+        <models>
+            <mytestmodule>
+                <class>MyNamespace_MyTestModule_Model</class>
+                <resourceModel>mytestmodule_mysql4</resourceModel>
+            </mytestmodule>
+            <mytestmodule_mysql4>
+                <class>MyNamespace_MyTestModule_Model_Mysql4</class>
+                <entities>
+                </entities>
+            </mytestmodule_mysql4>
+        </models>
+        <blocks>
+            <mytestmodule>
+                <class>MyNamespace_MyTestModule_Block</class>
+            </mytestmodule>
+        </blocks>
+    </global>
+    <adminhtml>
+    </adminhtml>
+    <admin>
+    </admin>
+</config>

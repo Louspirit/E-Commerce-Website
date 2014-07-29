@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MyNamespace_MyTestModule>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                
+            </depends>
+        </MyNamespace_MyTestModule>
+    </modules>
+</config>
